@@ -10,7 +10,7 @@ function calculateEarnings() {
         const porterAmount = total * percentage / 100;
         const balance = total - porterAmount;
 
-        earnings.value = balance;
+        earnings.value = Math.round(balance); 
     } else {
         earnings.value = "";
     }
@@ -30,8 +30,8 @@ function calculateIncome() {
         const owner = earning * 45 / 100;
         const worker = earning - owner;
 
-        ownerIncome.value = owner;
-        workerIncome.value = worker;
+        ownerIncome.value = Math.round(owner);
+        workerIncome.value = Math.round(worker);
     } else {
         ownerIncome.value = "";
         workerIncome.value = "";
