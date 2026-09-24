@@ -131,7 +131,7 @@ workerForm.addEventListener("submit", async function (event) {
     console.log("Sending data:", workerData);
 
     try {
-        const response = await fetch("https://salary-management-r2ic.onrender.com", {
+        const response = await fetch("https://salary-management-r2ic.onrender.com/api/workers", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
