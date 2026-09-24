@@ -201,7 +201,7 @@ app.listen(PORT, () => {
 
     console.log("--------------------------------");
     console.log("Server running successfully");
-    console.log("http://localhost:3000");
+    console.log("https://salary-management-r2ic.onrender.com");
     console.log("--------------------------------");
 
 });

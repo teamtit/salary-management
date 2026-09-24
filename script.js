@@ -60,9 +60,9 @@ document.getElementById("searchBtn").addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch(
-            `http://localhost:3000/api/workers/search?name=${encodeURIComponent(name)}&fromDate=${fromDate}&toDate=${toDate}`
-        );
+       const response = await fetch(
+    `https://salary-management-r2ic.onrender.com/api/workers/search?name=${encodeURIComponent(name)}&fromDate=${fromDate}&toDate=${toDate}`
+);
 
         const result = await response.json();
 
@@ -131,7 +131,7 @@ workerForm.addEventListener("submit", async function (event) {
     console.log("Sending data:", workerData);
 
     try {
-        const response = await fetch("http://localhost:3000/api/workers", {
+        const response = await fetch("https://salary-management-r2ic.onrender.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
