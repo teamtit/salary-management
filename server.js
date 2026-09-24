@@ -195,7 +195,7 @@ app.get("/api/workers", async (req, res) => {
 app.get("/test", (req, res) => {
     res.send("THIS SERVER IS WORKING");
 });
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
 
